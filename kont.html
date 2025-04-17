@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Konteyner</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #1f2937;
+            text-align: center;
+            padding: 10px 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .container {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            font-size: 30px;
+            font-weight: 600;
+            color: #1e40af;
+            margin-bottom: 30px;
+            border-left: 6px solid #3b82f6;
+            padding-left: 15px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .product {
+            margin-bottom: 50px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: slideUp 0.8s ease-in-out;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .product p {
+            padding: 20px;
+            font-size: 16px;
+            color: #444;
+        }
+
+        footer {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 15px;
+        }
+
+        footer a {
+            color: #38bdf8;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            margin-top: 50px;
+            text-align: center;
+            background: #f9fafb;
+            padding: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .contact a {
+            color: #10b981;
+            font-weight: 600;
+        }
+
+        .hamburger {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="hamburger">☰</div>
+        <h1>System Konteyner & Prefabrik</h1>
+        <p>Prefabrik ve Konteyner Yapılar Uzmanlığıyla Hizmetinizdeyiz</p>
+    </header>
+
+    <nav>
+        <a href="#konteyner">Konteyner</a>
+        <a href="#prefabrik">Prefabrik</a>
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#iletisim">İletişim</a>
+    </nav>
+
+    <div class="container">
+        <section id="konteyner">
+            <h2 class="section-title">Konteynerler</h2>
+            <div class="product">
+                <img src="ikili.jpg" alt="Modern Tek Kat Konteyner">
+                <p>Modern tasarımı ve geniş verandası ile doğayla iç içe konfor sunar. İdeal yaşam alanı arayanlar için
+                    şık bir çözüm.</p>
+            </div>
+            <div class="product">
+                <img src="balkonluu.jpg" alt="Çift Katlı Şık Konteyner">
+                <p>Üst katı terasa dönüştürülebilen, ferah ve fonksiyonel çift katlı yaşam alanı. Doğa ile bütünleşmiş
+                    bir yaşam için mükemmel tercih.</p>
+            </div>
+            <div class="product">
+                <img src="fransız.jpg" alt="tam camlı modern konteyner">
+                <p>Tam camları ve şık görüntüsü ile size ferah iç açıcı bir yaşam alanı sunar.</p>
+            </div>
+            <div class="product">
+                <img src="ö11.jpg" alt="Özel üretim konteyner">
+                <p>Özel üretim lüks konteyner. Özellikleri: 270 yükseklik, betopan tavan, Özel ölçü doğrama karolajlı
+                    camlar, ferforje korkuluk, duş ve kabin, spot aydınlatma.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="prefabrik">
+            <h2 class="section-title">Prefabrikler</h2>
+            <div class="product">
+                <img src="ciftkatpreff.jpg" alt="Prefabrik Dubleks Ev">
+                <p>Ahşap görünümlü dış cephesiyle sıcak ve estetik bir atmosfer sunan iki katlı prefabrik ev. Aile
+                    yaşamı için geniş ve huzurlu alanlar.</p>
+            </div>
+        
+            <div class="product">
+                <img src="preffff.jpg" alt="Huzur prefabrik">
+            <p> Yaşam alanlarınızı sadece ev olarak değil, huzurun adresi olarak tasarlıyoruz. </p>
+            </div>
+            
+        </section>
+
+        <section id="hakkimizda">
+            <h2 class="section-title">Hakkımızda</h2>
+            <p>System Konteyner & Prefabrik olarak yılların tecrübesiyle sizlere en kaliteli çözümleri sunuyoruz. Ürün
+                yelpazemiz, müşteri memnuniyetine dayalı hizmet anlayışımız ve yenilikçi bakış açımızla sektörde fark
+                yaratıyoruz. Hem konteyner hem prefabrik alanında, estetik ve fonksiyonelliği bir araya getirerek yaşam
+                alanlarınızı dönüştürüyoruz.</p>
+        </section>
+
+        <section class="contact" id="iletisim">
+            <h2>İletişim</h2>
+            <p>Telefon: <a href="tel:+905526920695">+90 552 692 06 95</a></p>
+            <p>WhatsApp: <a href="https://wa.me/905526920695" target="_blank">Mesaj Gönder</a></p>
+            <p>Instagram: <a href="https://instagram.com/systemkonteyner" target="_blank">@systemkonteyner</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 System Konteyner. Tüm hakları saklıdır. | <a href="https://instagram.com/systemkonteyner"
+                target="_blank">Instagram</a></p>
+    </footer>
+</body>
+
+</html>
